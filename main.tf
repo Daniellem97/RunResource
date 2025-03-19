@@ -12,7 +12,7 @@ provider "spacelift" {}
 
 resource "spacelift_stack" "this" {
   name              = "Test stack"
-  repository        = "simple-module" # https://github.com/Apollorion/simple-module
+  repository        = "tftest"
   branch            = "main"
   terraform_version = var.terraform_version
 }
